@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Warsigil · Ekran Taslakları</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gece-950: #060A16;
+    --gece-900: #0B1224;
+    --gece-800: #121B33;
+    --gece-700: #1A2647;
+    --gece-600: #26355F;
+    --antika-700: #6B4E1C;
+    --antika-500: #C9A04E;
+    --antika-300: #EAD29A;
+    --altin-300: #F6D88E;
+    --fildisi: #F4ECD8;
+    --sis: #A9B4D0;
+    --soluk: #7F8AA8;
+    --kehribar: #FFB547;
+    --zumrut-500: #1DB377;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background:
+      radial-gradient(120% 80% at 50% 0%, var(--gece-700) 0%, var(--gece-900) 55%, var(--gece-950) 100%) fixed;
+    color: var(--fildisi);
+    font-family: "Barlow Semi Condensed", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin: 8px 0 22px; }
+  .marka {
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    font-size: clamp(30px, 8vw, 46px);
+    color: var(--altin-300);
+    margin: 0;
+    text-shadow: 0 1px 0 var(--antika-700), 0 0 18px rgba(201, 160, 78, 0.25);
+  }
+  .alt-baslik {
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 13px;
+    color: var(--antika-500);
+    margin: 6px 0 0;
+  }
+  .cizgi {
+    height: 1px;
+    margin: 14px auto 0;
+    width: min(320px, 70%);
+    background: linear-gradient(90deg, transparent, var(--antika-500), transparent);
+  }
+  .panel {
+    background: rgba(18, 27, 51, 0.82);
+    border: 1px solid var(--antika-500);
+    border-radius: 8px;
+    padding: 6px;
+  }
+  .panel-baslik {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 12px 8px;
+    border-bottom: 1px solid var(--gece-600);
+  }
+  .panel-baslik h2 {
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 15px;
+    color: var(--altin-300);
+    margin: 0;
+  }
+  .sayi { color: var(--sis); font-size: 14px; }
+  ol.ekranlar { list-style: none; margin: 0; padding: 0; counter-reset: ekran; }
+  ol.ekranlar li { counter-increment: ekran; border-bottom: 1px solid var(--gece-700); }
+  ol.ekranlar li:last-child { border-bottom: 0; }
+  ol.ekranlar a {
+    display: grid;
+    grid-template-columns: 34px 1fr auto;
+    align-items: center;
+    gap: 2px 10px;
+    min-height: 64px;
+    padding: 10px 12px;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  ol.ekranlar a:active { background: var(--gece-700); }
+  ol.ekranlar a::before {
+    content: counter(ekran);
+    grid-row: 1 / span 2;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--antika-500);
+    display: grid; place-items: center;
+    font-family: "Cinzel", serif; font-weight: 800; font-size: 13px;
+    color: var(--antika-300);
+    background: var(--gece-900);
+  }
+  .ad { font-weight: 700; font-size: 18px; color: var(--fildisi); }
+  .ref { grid-column: 2; font-size: 14px; color: var(--sis); overflow-wrap: anywhere; }
+  .durum {
+    grid-column: 3; grid-row: 1 / span 2;
+    font-size: 13px; font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--antika-500);
+    color: var(--kehribar);
+    white-space: nowrap;
+  }
+  .durum.onayli { color: var(--zumrut-500); border-color: var(--zumrut-500); }
+  .bos {
+    padding: 26px 12px 22px;
+    text-align: center;
+    color: var(--soluk);
+  }
+  .bos strong { display: block; color: var(--sis); font-weight: 600; font-size: 17px; margin-bottom: 4px; }
+  footer { text-align: center; color: var(--soluk); font-size: 13px; margin-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 class="marka">WARSIGIL</h1>
+    <p class="alt-baslik">Ekran Taslakları</p>
+    <div class="cizgi"></div>
+  </header>
+
+  <section class="panel" aria-labelledby="liste-baslik">
+    <div class="panel-baslik">
+      <h2 id="liste-baslik">Ekranlar</h2>
+      <span class="sayi" id="sayi"></span>
+    </div>
+    <ol class="ekranlar" id="ekranlar">
+      <!--
+        Yeni ekran için bu listeye bir satır ekle (en yeni en üstte):
+        <li><a href="ekran-adi/"><span class="ad">Ekran Adı</span><span class="ref">Referans: Raid_02_SavasModu_Secim_1 · 2026-11-25</span><span class="durum">Onay bekliyor</span></a></li>
+        Onaylanınca: <span class="durum onayli">Onaylandı</span>
+      -->
+    </ol>
+    <div class="bos" id="bos" hidden>
+      <strong>Henüz taslak yok</strong>
+      İlk ekran taslağı eklenince burada görünecek.
+    </div>
+  </section>
+
+  <footer>Taslaklar yatay telefon ölçeğindedir (844×390); açınca telefonu yatay çevir.</footer>
+</main>
+<script>
+  (function () {
+    var n = document.querySelectorAll('#ekranlar > li').length;
+    document.getElementById('bos').hidden = n > 0;
+    document.getElementById('sayi').textContent = n > 0 ? n + ' ekran' : '';
+  })();
+</script>
+</body>
+</html>
