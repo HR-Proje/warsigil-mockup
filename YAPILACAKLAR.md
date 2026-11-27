@@ -58,3 +58,14 @@ Atlananlar: İttifak (Yakında), komutan detayının iki kilitli sekmesi.
 | gorevler | Liste ba?lant?s?nda dairesel ?er?eve ve zemin vard?; sade sol ?st ba?lant? yap?ld?. | d?zeltildi |
 | posta | Liste ba?lant?s? sol ?stte de?ildi ve 44?44 px alt?ndayd?; sol ?ste ta??n?p 44?44 px yap?ld?. | d?zeltildi |
 | kostum | Liste ba?lant?s?n?n dokunma y?ksekli?i 30 px idi ve sol ?st hizas?nda de?ildi; sol ?stte 44?44 px yap?ld?. | d?zeltildi |
+
+| kusatma | Liste bağlantısı zeminsiz ve 44×44 px değildi. | düzeltildi |
+| arena | Liste bağlantısının dokunma alanı 44×44 px değildi. | düzeltildi |
+| meydan-okuma | Liste bağlantısında dokunma alanı ve sade biçim standardı birleştirildi. | düzeltildi |
+| gorev-modu | Liste bağlantısında 44×44 px dokunma alanı yoktu. | düzeltildi |
+| savas-sonucu | Liste bağlantısının dokunma alanı sadeleştirilip 44×44 px yapıldı. | düzeltildi |
+| savas-hud | Liste bağlantısı 38 px yüksekliğindeydi. | düzeltildi |
+| dukkan | Liste bağlantısında zemin/kenarlık vardı ve dokunma alanı 44×44 px değildi. | düzeltildi |
+| paket-acma | Liste bağlantısının sol üst hizası ve 44×44 px alanı sabitlendi. | düzeltildi |
+| pazar-raflari | Liste bağlantısında zemin/kenarlık vardı ve dokunma alanı 44×44 px değildi. | düzeltildi |
+| kusatma, arena, meydan-okuma, gorev-modu, savas-sonucu, savas-hud, dukkan, paket-acma, pazar-raflari | Edge `spawn EPERM` nedeniyle Playwright açılmadı; ekran görüntüsü, etkileşim, taşma, konsol ve bağlantı kontrolleri yapılamadı. | açık |

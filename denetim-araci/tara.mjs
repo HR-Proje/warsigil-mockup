@@ -1,6 +1,6 @@
 ﻿import { createRequire } from 'node:module';
 const require=createRequire(import.meta.url); const {chromium}=require('playwright'); const fs=require('fs'),path=require('path');
-const pages=['kadro-hazirlik','etkinlikler','gorevler','posta','profil','ayarlar','kostum','hikaye','medeniyet-kulesi'];
+const pages=['kusatma','arena','meydan-okuma','gorev-modu','savas-sonucu','savas-hud','dukkan','paket-acma','pazar-raflari'];
 (async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});const report=[];
 for(const slug of pages){const context=await browser.newContext({viewport:{width:844,height:390},deviceScaleFactor:1});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push('pageerror: '+e.message));page.on('console',m=>{if(m.type()==='error')errors.push('console: '+m.text())});const out=path.resolve('denetim',slug);fs.mkdirSync(out,{recursive:true});
 try{await page.goto(`http://127.0.0.1:8077/${slug}/`,{waitUntil:'networkidle',timeout:20000});await page.waitForTimeout(3000);await page.screenshot({path:path.join(out,'00-ekran.jpg'),type:'jpeg',quality:70});
