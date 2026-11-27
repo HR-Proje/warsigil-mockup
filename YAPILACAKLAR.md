@@ -37,3 +37,10 @@ Adres: https://hr-proje.github.io/warsigil-mockup/<slug>/
 
 Atlananlar: İttifak (Yakında), komutan detayının iki kilitli sekmesi.
 Önceki turda düzeltilenler (X, Yükselt menüsü, Pazar köşeleri, Heykel, mod haritası, Arena kartı) Hami'nin telefon kontrolünü bekliyor.
+
+## Denetim bulguları
+
+| Sayfa | Sorun | Durum |
+|---|---|---|
+| ana-ekran / ortak Main.dc.html | Kesik klip şekilleri ve border-image düğme kaplamaları yuvarlak biçime çevrildi. | düzeltildi |
+| ana-ekran, mod-haritasi, takip-merkezi, techizat-depo, pazar, heykel, sol-cekmece, yapi-yakinlasma, zumrut-ocagi | Edge başlatma `spawn EPERM` ile engellendi; etkileşim, taşma, konsol ve ekran görüntüsü doğrulaması yapılamadı. | açık |
