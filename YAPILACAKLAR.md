@@ -40,5 +40,14 @@ Atlananlar: İttifak (Yakında), komutan detayının iki kilitli sekmesi.
 
 ## Denetim bulguları
 
-İlk Codex turu tarayıcı açamadı (Edge `spawn EPERM`); önceki 20 bulgu yalnız koddan okundu ve düzeltildi. Gerçek tarama Claude tarafında çalıştırıldı: `denetim/rapor.json` ve `denetim/<sayfa>/*.jpg`. Gürültülü ham sayılar ayıklanıp aşağıya yazılacak.
-
+Sayfa | Sorun | Durum
+--- | --- | ---
+ana-ekran | HUD etiket/rozet çerçeveleri kesikti; raporda kaynağı belirtilmeyen 404 hatası da var, görüntüde eksik görsel seçilemiyor | Çerçeve düzeltildi; 404 açık
+mod-haritasi | Doğrulanmış görsel veya işlev sorunu yok | Düzeltildi (bulgu yok)
+takip-merkezi | Doğrulanmış görsel veya işlev sorunu yok | Düzeltildi (bulgu yok)
+techizat-depo | HUD etiket/rozet çerçeveleri kesikti; rapordaki düğmelerin handler’ları `goProfil`, `op` ve state güncellemelerine bağlı | Düzeltildi (CSS düzeltildi; ölü alarmı yanlış)
+pazar | Boş envanter yuvası raporu; yuva kartlarında “Görsel gerekli” ve dosya/ölçü bilgisi var | Düzeltildi (yanlış alarm; sorun yok)
+heykel | Heykel seçme düğmeleri raporda ölü göründü; `statuePick` eşlemesi durumu değiştiriyor | Düzeltildi (işlev doğrulandı)
+sol-cekmece | Çekmece ve HUD çerçeveleri kesikti; işaretli düğmelerin `onClick` handler’ları menü/panel veya gezinme başlatıyor | Düzeltildi (CSS düzeltildi; ölü alarmı yanlış)
+yapi-yakinlasma | HUD etiketleri ve sayaç rozetlerinde PNG kesik çerçeveler | Düzeltildi (`Main.dc.html`)
+zumrut-ocagi | HUD etiketleri ve sayaç rozetlerinde PNG kesik çerçeveler; panel PNG çerçevesi | Düzeltildi (`Main.dc.html`)
