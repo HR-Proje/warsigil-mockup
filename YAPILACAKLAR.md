@@ -24,7 +24,7 @@ Adres: https://hr-proje.github.io/warsigil-mockup/<slug>/
 | 17 | meydan-okuma | Meydan Okuma | MK Challenge | yapıldı |  |
 | 18 | gorev-modu | Görev Modu / Sefer Haritası | MK Quest | yapıldı |  |
 | 19 | savas-sonucu | Savaş sonucu | Raid 46 Sonuç | yapıldı |  |
-| 20 | savas-hud | Savaş HUD'u | Warsigil'e özgü | bekliyor | |
+| 20 | savas-hud | Savaş HUD'u | Warsigil'e özgü | yapıldı |  |
 | 21 | dukkan | Dükkân | Raid 34 | bekliyor | |
 | 22 | paket-acma | Paket açma ve kopya birleşme | Warsigil'e özgü | bekliyor | |
 | 23 | pazar-raflari | Pazar rafları | Raid Bilet Tüccarı, Klan Dükkânı | bekliyor | |
