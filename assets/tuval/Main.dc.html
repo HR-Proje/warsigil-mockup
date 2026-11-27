@@ -834,7 +834,7 @@ class Component extends DCLogic {
     this.focus(id, side, function(){
       if(locked) self.setState({panel:'lock', lockId:id});
       else if(dst.t==='panel') self.setState({panel:dst.k});
-      else if(dst.t==='pazar') self.setState({screen:'pazar'});
+      else if(dst.t==='pazar') window.location.href='../pazar-raflari/';
       else if(dst.k==='arena') window.location.href='../arena/';
       else self.openPh(dst.k);
     });
