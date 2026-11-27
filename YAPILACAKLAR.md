@@ -28,7 +28,7 @@ Adres: https://hr-proje.github.io/warsigil-mockup/<slug>/
 | 21 | dukkan | Dükkân | Raid 34 | yapıldı |  |
 | 22 | paket-acma | Paket açma ve kopya birleşme | Warsigil'e özgü | yapıldı |  |
 | 23 | pazar-raflari | Pazar rafları | Raid Bilet Tüccarı, Klan Dükkânı | yapıldı |  |
-| 24 | sezon-bileti | Sezon Bileti | Warsigil'e özgü | bekliyor | |
+| 24 | sezon-bileti | Sezon Bileti | Warsigil'e özgü | yapıldı |  |
 | 25 | vazifeler-basarimlar | İlerleme Vazifeleri, Başarımlar | Raid 38 (gevşek) | bekliyor | |
 | 26 | gunluk-giris-oduller | Günlük Giriş, Seviye Ödülleri, Oynayış Ödülleri | Warsigil'e özgü | bekliyor | |
 | 27 | sinirli-teklif | Sınırlı Teklif | Raid 34 Teklif | bekliyor | |

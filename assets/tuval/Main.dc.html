@@ -686,7 +686,7 @@ class Component extends DCLogic {
     this.cr={}; this.tb={}; this.cam={x:460,y:0,z:1}; this.pre=null; this.busy=false; this.camEl=null; this.rootEl=null; this.drag=null; this.anim=null; this.k=1;
     this.op={}; Object.keys(PH).forEach(function(k){ self.op[k]=function(){ self.openPh(k); }; }); this.op.kule=function(){ window.location.href='../medeniyet-kulesi/'; }; this.op.dukkan=function(){ window.location.href='../paket-acma/'; };
     this.ddGo={ kule:function(){ window.location.href='../medeniyet-kulesi/'; }, kusatma:function(){ window.location.href='../kusatma/'; },
-      madalya:function(){ self.ddPazar('cephanelik'); }, arena:function(){ self.ddPazar('arena'); }, sezon:function(){ self.ddPazar('sezon'); } };
+      madalya:function(){ self.ddPazar('cephanelik'); }, arena:function(){ self.ddPazar('arena'); }, sezon:function(){ window.location.href='../sezon-bileti/'; } };
     this.tabGo={}; ['vitrin','cephanelik','arena','sezon'].forEach(function(k){ self.tabGo[k]=function(){ self.selTab(k); }; });
     this.pzb={}; this.pzz={}; this.pzu={}; ['A','B'].forEach(function(S){ for(var i=1;i<=12;i++){ (function(S,i){ self.pzb[S+i]=function(){ self.pzBuy(S,i,'gold'); }; self.pzz[S+i]=function(){ self.pzBuy(S,i,'gems'); }; })(S,i); } });
     for(var j=5;j<=12;j++){ (function(j){ self.pzu['s'+j]=function(){ self.pzUnlock(j); }; })(j); }
