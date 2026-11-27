@@ -44,3 +44,11 @@ Atlananlar: Ä°ttifak (YakÄ±nda), komutan detayÄ±nÄ±n iki kilitli sekmesi.
 |---|---|---|
 | ana-ekran / ortak Main.dc.html | Kesik klip ÅŸekilleri ve border-image dÃ¼ÄŸme kaplamalarÄ± yuvarlak biÃ§ime Ã§evrildi. | dÃ¼zeltildi |
 | ana-ekran, mod-haritasi, takip-merkezi, techizat-depo, pazar, heykel, sol-cekmece, yapi-yakinlasma, zumrut-ocagi | Edge baÅŸlatma `spawn EPERM` ile engellendi; etkileÅŸim, taÅŸma, konsol ve ekran gÃ¶rÃ¼ntÃ¼sÃ¼ doÄŸrulamasÄ± yapÄ±lamadÄ±. | aÃ§Ä±k |
+
+| bas-ekrani | Liste bağlantısı sağa yakın, sol üstte değildi; dokunma alanı 44×44 px altındaydı. | düzeltildi |
+| haklar-listesi | Liste bağlantısı sağa yakın, sol üstte değildi; dokunma alanı 44×44 px altındaydı. | düzeltildi |
+| kilitli-yapi | Liste bağlantısı sağa yakın, sol üstte değildi; dokunma alanı 44×44 px altındaydı. | düzeltildi |
+| komutan-detayi | Liste bağlantısı sağa yakın, sol üstte değildi; dokunma alanı 44×44 px altındaydı. | düzeltildi |
+| avatar-rozetleri | Liste bağlantısı sağa yakın, sol üstte değildi; dokunma alanı 44×44 px altındaydı. | düzeltildi |
+| kisla | Simge düğmesi ovaldi ve 44×36 px idi; daire, 44×44 px yapıldı. | düzeltildi |
+| bas-ekrani, haklar-listesi, kilitli-yapi, komutan-detayi, avatar-rozetleri, kisla, komutan-dizini, sancak-salonu, cagri-otagi | Playwright Edge başlatma `spawn EPERM` ile engellendi; görsel, taşma, etkileşim ve konsol taraması tamamlanamadı. | açık |
