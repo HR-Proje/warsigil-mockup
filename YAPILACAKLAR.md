@@ -83,3 +83,10 @@ pazar-raflari | Boş yuva ve sahne dışı kart raporu; yuvalar işaretli, kartl
 savas-hud | Arayüz metinleri mojibake nedeniyle bozuktu | Düzeltildi (UTF-8 metinleri onarıldı)
 savas-sonucu | Ödül dosya adları küçük yuvalarda taşıp satırları çakıştırıyordu | Düzeltildi (yuvalar satır kıracak şekilde büyütüldü)
 assets/tuval/Main.dc.html | Sekme çerçevesi PNG border-image ile kesik köşeli görünüyordu | Düzeltildi (yuvarlak CSS kenarlık)
+
+sezon-bileti | Odul karti basliklari dar hucreden tasma riski tasiyordu | Duzeltildi (satir kirma eklendi)
+vazifeler-basarimlar | Rapor alt satirlari sahne disinda gosterdi; liste kaydirilabilir, goruntude kesilen metin yok | Duzeltildi (yanlis alarm)
+gunluk-giris-oduller | Kart seridi kaydiriliyor; bos odul yuvalarinin tumunde Gorsel gerekli etiketi var | Duzeltildi (bulgu yok)
+sinirli-teklif | Rapor modali sahne disinda olctu; olcum olceklenmis tuvalden kaynakli | Duzeltildi (yanlis alarm)
+davet-promosyon | Davetli avatar yuvalarinda dosya adi ve olcu bilgisi eksikti | Duzeltildi (Gorsel gerekli etiketi, dosya adi ve olcu eklendi)
+bilgi-rehber | Rapor yalniz ortusen pencere ve ic oge olculerini isaretledi; goruntude kesilme yok | Duzeltildi (yanlis alarm)
