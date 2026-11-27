@@ -31,7 +31,7 @@ Adres: https://hr-proje.github.io/warsigil-mockup/<slug>/
 | 24 | sezon-bileti | Sezon Bileti | Warsigil'e özgü | yapıldı |  |
 | 25 | vazifeler-basarimlar | İlerleme Vazifeleri, Başarımlar | Raid 38 (gevşek) | yapıldı |  |
 | 26 | gunluk-giris-oduller | Günlük Giriş, Seviye Ödülleri, Oynayış Ödülleri | Warsigil'e özgü | yapıldı |  |
-| 27 | sinirli-teklif | Sınırlı Teklif | Raid 34 Teklif | bekliyor | |
+| 27 | sinirli-teklif | Sınırlı Teklif | Raid 34 Teklif | yapıldı |  |
 | 28 | davet-promosyon | Davet Programı, Promosyon Kodu | Warsigil'e özgü | bekliyor | |
 | 29 | bilgi-rehber | Eşya Bilgi Kartı, Rehber | Warsigil'e özgü | bekliyor | |
 
