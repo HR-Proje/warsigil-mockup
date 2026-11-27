@@ -69,3 +69,4 @@ Atlananlar: İttifak (Yakında), komutan detayının iki kilitli sekmesi.
 | paket-acma | Liste bağlantısının sol üst hizası ve 44×44 px alanı sabitlendi. | düzeltildi |
 | pazar-raflari | Liste bağlantısında zemin/kenarlık vardı ve dokunma alanı 44×44 px değildi. | düzeltildi |
 | kusatma, arena, meydan-okuma, gorev-modu, savas-sonucu, savas-hud, dukkan, paket-acma, pazar-raflari | Edge `spawn EPERM` nedeniyle Playwright açılmadı; ekran görüntüsü, etkileşim, taşma, konsol ve bağlantı kontrolleri yapılamadı. | açık |
+| sezon-bileti, vazifeler-basarimlar, gunluk-giris-oduller, sinirli-teklif, davet-promosyon, bilgi-rehber | Playwright Edge `spawn EPERM` ile başlayamadı; görsel taşma/çakışma, etkileşim, ölü bağlantı ve konsol kontrolleri tamamlanamadı. Kaynak taramasında Liste bağlantısı, görsel yer tutucuları (varsa), sade 44×44 X ve yasaklı clip-path/polygon/border-image bulunmadı. | açık |
