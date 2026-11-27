@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800;900&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<title>Warsigil · Kuşatma</title>
+<style>
+:root{--bg:#0B1224;--panel:#121B33;--edge:#C9A04E;--head:#F6D88E;--text:#F4ECD8;--muted:#A9B4D0;--red:#C83D4B;--green:#1DB377}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#060A16;color:var(--text);font-family:"Barlow Semi Condensed",system-ui,sans-serif}button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}#stage{position:absolute;width:844px;height:390px;left:50%;top:50%;transform-origin:center center;background:radial-gradient(ellipse at 50% 30%,#1A2647,var(--bg) 70%);overflow:hidden}#liste{position:absolute;z-index:4;left:8px;top:5px;color:var(--text);font-size:12px;text-decoration:none;padding:4px 8px;border:1px solid #C9A04E80;border-radius:999px;background:#0B1224}header{height:48px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid #6B4E1C;padding:0 60px}h1,h2,.cap{font-family:Cinzel,Georgia,serif;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--head);margin:0}h1{font-size:20px}.hud{position:absolute;right:52px;top:5px;border:1px solid var(--edge);border-radius:999px;padding:5px 11px;font-size:14px;text-shadow:1px 1px #000}.layout{display:grid;grid-template-columns:1fr 300px;gap:12px;padding:8px 14px 10px;height:342px}.left{display:flex;flex-direction:column;gap:8px;min-width:0}.bossline{display:flex;align-items:center;justify-content:space-between;height:32px}.bossline strong{font:800 15px Cinzel,Georgia,serif;color:var(--head)}.timer{color:#FFB547;font-size:14px;text-shadow:1px 1px #000}.bosses{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;height:104px}.boss{border:1px dashed var(--edge);border-radius:7px;background:#121B33;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center;position:relative;font-size:13px}.boss.selected{border-style:solid;box-shadow:0 0 12px #C9A04E50}.boss.locked{opacity:.52}.slot{font-size:12px;color:var(--muted)}.bossname{font-weight:700;color:var(--head)}.boss .state{font-size:12px;color:var(--muted)}.stats{display:flex;gap:8px;flex:1;min-height:0}.stat{border:1px solid var(--edge);border-radius:7px;background:#121B33;padding:8px 10px;flex:1;min-width:0}.stat h2{font-size:12px;margin-bottom:6px}.battleRows{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.battle{height:38px;border:1px dashed #6B4E1C;border-radius:6px;display:grid;place-items:center;color:var(--muted);font-size:12px}.totals{display:flex;justify-content:space-between;margin-top:6px;font-size:13px}.right{display:flex;flex-direction:column;gap:6px;min-height:0}.difficultyTitle{display:flex;justify-content:space-between;align-items:center;height:23px}.difficultyTitle h2{font-size:13px}.difficultyList{display:flex;flex-direction:column;gap:5px;flex:1}.difficulty{border:1px solid #6B4E1C;border-radius:7px;background:#121B33;padding:5px 8px;min-height:53px;text-align:left;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 6px}.difficulty.active{border-color:var(--head);background:#1A2647}.difficulty.locked{opacity:.45}.dname{font-weight:700;color:var(--head);font-size:14px}.max{font-size:12px;color:var(--muted)}.bar{grid-column:1/-1;height:8px;border:1px solid #8F303C;background:#301B2A;border-radius:999px;position:relative;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#8D2736,#E14D55);border-radius:999px}.ticks{position:absolute;inset:0;display:flex;justify-content:space-evenly}.ticks i{width:1px;background:#F4ECD8AA;height:100%}.actions{height:40px;display:flex;justify-content:flex-end;gap:8px}.pill{height:40px;min-width:116px;border:1px solid var(--edge);border-radius:999px;background:#172441;font-weight:700;font-size:14px}.pill.gold{background:var(--green);border-color:#57D7A2;color:#041C13}.icon{width:40px;height:40px;border-radius:50%;border:1px solid var(--edge);background:#172441}.modal{position:absolute;inset:0;background:#030817C9;display:none;align-items:center;justify-content:center;z-index:5}.modal.open{display:flex}.window{width:570px;max-height:330px;background:#121B33;border:1px solid var(--edge);border-radius:8px;padding:15px 18px;position:relative;box-shadow:0 12px 35px #0009}.window.small{width:450px}.window h2{text-align:center;font-size:16px;border-bottom:1px solid #6B4E1C;padding:0 30px 9px}.x{position:absolute;right:4px;top:3px;width:44px;height:44px;border:0;background:none;color:var(--text);font-size:25px;line-height:1}.chests{display:grid;gap:6px;margin-top:10px}.chest{display:grid;grid-template-columns:40px 1fr auto;align-items:center;gap:8px;min-height:48px;border:1px solid #6B4E1C;border-radius:7px;padding:3px 7px}.chest .slot{width:36px;height:36px;border:1px dashed var(--edge);display:grid;place-items:center;text-align:center;font-size:10px}.chest b{display:block;font-size:14px}.chest small{font-size:12px;color:var(--muted)}.chest button{border:1px solid var(--edge);border-radius:999px;background:#172441;height:44px;padding:0 12px;font-size:12px}.loot{text-align:center;margin:12px 8px 8px;font-size:14px}.lootgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;justify-items:center}.lootitem{width:70px;height:62px;border:1px dashed var(--edge);border-radius:6px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:12px}.lootitem span{color:var(--text)}.note{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}.hint{position:absolute;bottom:62px;left:50%;transform:translateX(-50%);display:none;background:#121B33;border:1px solid var(--edge);border-radius:6px;padding:6px 10px;white-space:nowrap}.hint.show{display:block}.hidden{display:none}@media(orientation:portrait){#stage{visibility:hidden}}
+</style>
+</head>
+<body>
+<main id="stage">
+<a id="liste" href="../">← Liste</a>
+<header><h1>Kuşatma</h1><div class="hud">Kuşatma hakkı <b id="rights">3 / 3</b></div></header>
+<div class="layout">
+<section class="left">
+<div class="bossline"><strong>Haftanın Kuşatması</strong><span class="timer">Haftalık yenilenme · Pazartesi 00:00 UTC</span></div>
+<div class="bosses" id="bosses">
+<button class="boss selected" data-boss="Kale Kapısı"><span class="slot">Görsel gerekli<br>Boss_[ad].png · 120×56 px</span><span class="bossname">Kale Kapısı</span><span class="state">Aktif</span></button>
+<button class="boss locked" data-boss="Savaş Filleri"><span class="slot">Görsel gerekli<br>Boss_[ad].png · 120×56 px</span><span class="bossname">Savaş Filleri</span><span class="state">Sırada</span></button>
+<button class="boss locked" data-boss="Mancınık Bataryası"><span class="slot">Görsel gerekli<br>Boss_[ad].png · 120×56 px</span><span class="bossname">Mancınık Bataryası</span><span class="state">Sonraki rotasyon</span></button>
+</div>
+<div class="stats">
+<div class="stat"><h2>Bugünkü Savaşlar</h2><div class="battleRows"><div class="battle">Savaş 1<br>—</div><div class="battle">Savaş 2<br>—</div><div class="battle">Savaş 3<br>—</div></div><div class="totals"><span>Toplam hasar <b>—</b></span><span>En yüksek <b>—</b></span></div></div>
+<div class="stat"><h2>Günlük Savaş Koşulu</h2><div class="slot" style="height:47px;display:grid;place-items:center">Görsel gerekli<br>kosul.png · 34×34 px</div></div>
+</div>
+</section>
+<aside class="right">
+<div class="difficultyTitle"><h2>Zorluklar</h2><span class="timer">Eşik ilerlemesi</span></div>
+<div class="difficultyList" id="difficultyList">
+<button class="difficulty active" data-difficulty="Normal"><span class="dname">Normal</span><span class="max">En yüksek hasar: —</span><span class="bar"><span class="fill" style="width:0%"></span><span class="ticks"><i></i><i></i><i></i><i></i></span></span></button>
+<button class="difficulty" data-difficulty="Zorlu"><span class="dname">Zorlu</span><span class="max">En yüksek hasar: —</span><span class="bar"><span class="fill" style="width:0%"></span><span class="ticks"><i></i><i></i><i></i><i></i></span></span></button>
+<button class="difficulty locked" data-difficulty="Kadim"><span class="dname">Kadim</span><span class="max">Önceki zorlukta tam sandık</span><span class="bar"><span class="fill" style="width:0%"></span><span class="ticks"><i></i><i></i><i></i><i></i></span></span></button>
+<button class="difficulty locked" data-difficulty="Efsane"><span class="dname">Efsane</span><span class="max">Önceki zorlukta tam sandık</span><span class="bar"><span class="fill" style="width:0%"></span><span class="ticks"><i></i><i></i><i></i><i></i></span></span></button>
+</div>
+<div class="actions"><button class="pill" id="chestOpen">Sandıklar</button><button class="pill gold" id="fight">Savaş · 3 hak</button></div>
+</aside>
+</div>
+<div class="modal" id="chestModal" aria-hidden="true"><section class="window" role="dialog" aria-modal="true" aria-labelledby="chestTitle"><button class="x" data-close aria-label="Kapat">×</button><h2 id="chestTitle">Sandık Eşikleri · Normal</h2><div class="chests" id="chests"></div></section></div>
+<div class="modal" id="lootModal" aria-hidden="true"><section class="window small" role="dialog" aria-modal="true" aria-labelledby="lootTitle"><button class="x" data-close aria-label="Kapat">×</button><h2 id="lootTitle">Sandık İçeriği</h2><div class="loot">Bu sandık Madalya ve Altın içerir.</div><div class="lootgrid"><button class="lootitem" data-hint="Madalya"><span>Görsel gerekli<br>odul.png · 56×48 px</span></button><button class="lootitem" data-hint="Altın"><span>Görsel gerekli<br>odul.png · 56×48 px</span></button></div><div class="note">İçerik miktarları dengelemede belirlenecek.</div><div class="hint" id="hint"></div></section></div>
+</main>
+<script>
+(function(){
+'use strict';
+var stage=document.getElementById('stage');
+function fit(){var s=Math.min(innerWidth/844,innerHeight/390);stage.style.transform='translate(-50%,-50%) scale('+s+')';}
+fit();addEventListener('resize',fit);addEventListener('orientationchange',fit);
+var difficulty='Normal', chestModal=document.getElementById('chestModal'),lootModal=document.getElementById('lootModal'),list=document.getElementById('chests');
+var chestNames=['Sandık'];
+function makeChests(){list.textContent='';chestNames.forEach(function(name,i){var row=document.createElement('div');row.className='chest';row.innerHTML='<span class="slot">Görsel gerekli<br>sandik.png · 36×36 px</span><span><b>'+name+'</b><small>Gereksinim: hasar eşiği '+(i+1)+'</small></span><button type="button" class="lootOpen">Ödüller</button>';row.querySelector('button').addEventListener('pointerup',function(){lootModal.classList.add('open');lootModal.setAttribute('aria-hidden','false');});list.appendChild(row);});document.getElementById('chestTitle').textContent='Sandık Eşikleri · '+difficulty;}
+document.getElementById('difficultyList').addEventListener('pointerup',function(e){var b=e.target.closest('.difficulty');if(!b||b.classList.contains('locked'))return;difficulty=b.dataset.difficulty;document.querySelectorAll('.difficulty').forEach(function(x){x.classList.toggle('active',x===b);});});
+document.getElementById('chestOpen').addEventListener('pointerup',function(){makeChests();chestModal.classList.add('open');chestModal.setAttribute('aria-hidden','false');});
+document.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('pointerup',function(){b.closest('.modal').classList.remove('open');b.closest('.modal').setAttribute('aria-hidden','true');});});
+document.querySelectorAll('.modal').forEach(function(m){m.addEventListener('pointerup',function(e){if(e.target===m){m.classList.remove('open');m.setAttribute('aria-hidden','true');}});});
+document.querySelectorAll('[data-hint]').forEach(function(b){b.addEventListener('pointerup',function(){var h=document.getElementById('hint');h.textContent=b.dataset.hint;h.classList.add('show');setTimeout(function(){h.classList.remove('show');},1400);});});
+document.getElementById('fight').addEventListener('pointerup',function(){var n=document.getElementById('rights'),v=Number(n.textContent.split('/')[0].trim());if(v>0){v--;n.textContent=v+' / 3';document.getElementById('fight').textContent='Savaş · '+v+' hak';}});
+})();
+</script>
+</body>
+</html>
+
+
