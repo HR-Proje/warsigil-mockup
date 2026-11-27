@@ -10,10 +10,10 @@ Warsigil (mobil kart-strateji) arayüz taslakları. Her ekran `<ekran-adi>/index
 - Yazı: başlık Cinzel (800–900, büyük harf, `lang="tr"`), arayüz Barlow Semi Condensed. HUD yazısında 1 px siyah kontur. Metinler Türkçe; premium para "Zümrüt". Ekranda açıklama paragrafı yok.
 
 ## Biçim ve davranış
-- Düğme ailesi: simge düğmeleri (kapat, bilgi, kilit, çekmece kapatma) tam yuvarlak; metinli düğmeler (Aç, Satın Al, Yükselt vb.) oval/hap.
-- Altıgen, sekizgen ya da köşeli düğme yok.
+- Düğme ailesi: kapatma sağ üstte sade X olur; #F4ECD8 renginde, zeminsiz, dairesiz ve kenarlıksız; dokunma alanı 44x44 px olur. Diğer simge düğmeleri daire, metinli düğmeler (Aç, Satın Al, Yükselt vb.) oval/hap olur.
+- Altıgen, sekizgen, çentikli köşe ya da köşeli düğme yok.
 - 844×390 yatay çerçeve, ekrana ölçekle sığar (oran korunur). Dokunmatik: pointer olayları, hover'a bağlı işlev yok; dokunma alanı en az 44 px, yazı en az 12 px.
-- Sekmeler, pencereler, kaydırmalar örnek veriyle çalışır. Pencere dışına dokunmak kapatır; tam ekran pencerede sağ üstte yuvarlak kapat.
+- Sekmeler, pencereler, kaydırmalar örnek veriyle çalışır. Pencere dışına dokunmak kapatır; tam ekran pencerede sağ üstte sade X kapat.
 - Görseller `../assets/<dosya>.png`. Görseli olmayan yuva kesik çizgili yer tutucudur: içinde dosya adı ve yuva ölçüsü yazar. Var olan görsel başka yuvaya kırpılıp konmaz.
 - Sayı uydurma; kurallar ve sayılar oyun reposunda `Docs/GDD/` altındadır.
 
