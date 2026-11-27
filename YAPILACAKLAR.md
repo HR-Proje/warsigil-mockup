@@ -52,3 +52,9 @@ Atlananlar: Ä°ttifak (YakÄ±nda), komutan detayÄ±nÄ±n iki kilitli sekmesi.
 | avatar-rozetleri | Liste baðlantýsý saða yakýn, sol üstte deðildi; dokunma alaný 44×44 px altýndaydý. | düzeltildi |
 | kisla | Simge düðmesi ovaldi ve 44×36 px idi; daire, 44×44 px yapýldý. | düzeltildi |
 | bas-ekrani, haklar-listesi, kilitli-yapi, komutan-detayi, avatar-rozetleri, kisla, komutan-dizini, sancak-salonu, cagri-otagi | Playwright Edge baþlatma `spawn EPERM` ile engellendi; görsel, taþma, etkileþim ve konsol taramasý tamamlanamadý. | açýk |
+
+| kadro-hazirlik, etkinlikler, gorevler, posta, profil, ayarlar, kostum, hikaye, medeniyet-kulesi | Edge `spawn EPERM` nedeniyle ekran g?r?nt?s? ve etkile?im taramas? yap?lamad?; kaynakta Liste ba?lant?lar? ve T?rk?e dil bildirimi do?ruland?. | a??k |
+| etkinlikler | Liste ba?lant?s? 44?44 px de?ildi; sol ?stte 44?44 px yap?ld?. | d?zeltildi |
+| gorevler | Liste ba?lant?s?nda dairesel ?er?eve ve zemin vard?; sade sol ?st ba?lant? yap?ld?. | d?zeltildi |
+| posta | Liste ba?lant?s? sol ?stte de?ildi ve 44?44 px alt?ndayd?; sol ?ste ta??n?p 44?44 px yap?ld?. | d?zeltildi |
+| kostum | Liste ba?lant?s?n?n dokunma y?ksekli?i 30 px idi ve sol ?st hizas?nda de?ildi; sol ?stte 44?44 px yap?ld?. | d?zeltildi |
