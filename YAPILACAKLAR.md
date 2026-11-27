@@ -18,7 +18,7 @@ Adres: https://hr-proje.github.io/warsigil-mockup/<slug>/
 | 11 | ayarlar | Ayarlar | Raid 42 | yapıldı | |
 | 12 | kostum | Kostüm | Raid 43 | yapıldı | |
 | 13 | hikaye | Hikâye | Raid 3–4 | yapıldı |  |
-| 14 | medeniyet-kulesi | Medeniyet Kulesi | Raid 6–8 (gevşek) | bekliyor | |
+| 14 | medeniyet-kulesi | Medeniyet Kulesi | Raid 6–8 (gevşek) | yapıldı |  |
 | 15 | kusatma | Kuşatma | Raid 9–11 | bekliyor | |
 | 16 | arena | Arena | Raid 44–45 | bekliyor | |
 | 17 | meydan-okuma | Meydan Okuma | MK Challenge | bekliyor | |
