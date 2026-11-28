@@ -90,3 +90,11 @@ gunluk-giris-oduller | Kart seridi kaydiriliyor; bos odul yuvalarinin tumunde Go
 sinirli-teklif | Rapor modali sahne disinda olctu; olcum olceklenmis tuvalden kaynakli | Duzeltildi (yanlis alarm)
 davet-promosyon | Davetli avatar yuvalarinda dosya adi ve olcu bilgisi eksikti | Duzeltildi (Gorsel gerekli etiketi, dosya adi ve olcu eklendi)
 bilgi-rehber | Rapor yalniz ortusen pencere ve ic oge olculerini isaretledi; goruntude kesilme yok | Duzeltildi (yanlis alarm)
+
+## Denetim bulguları — bağlantı ve ana ekran düğmeleri (2026-11-28)
+
+| Alan | Bulgu | Sonuç |
+|---|---|---|
+| ana-ekran / SAVAŞ | `op.savas`, genel `PH` yer tutucusuna düşerek Sıra 2 penceresini açıyordu; mod-haritasi yönlendirmesi yoktu | Düzeltildi (`../mod-haritasi/` yönlendirmesi eklendi) |
+| ana-ekran / diğer düğmeler | Ana ekran tuvalindeki 321 düğme etiketinin tamamında `onClick` bağlaması var; başka bağlamasız düğme bulunmadı. Takip `goTakip` ile `../vazifeler-basarimlar/` sayfasına bağlı | İşlevsiz düğme bulunmadı |
+| site bağlantıları | HTML, JS ve CSS yollarında kök `/` kullanımı yok; yerel ve `--canli` GitHub Pages denetimleri temiz | `kırık bağlantı: 0` |

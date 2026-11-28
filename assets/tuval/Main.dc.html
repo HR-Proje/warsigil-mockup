@@ -692,7 +692,7 @@ class Component extends DCLogic {
     this.kdPick={}; KD.forEach(function(c){ self.kdPick[c.s]=function(){ self.kdPickC(c.s); }; });
     this.kdSortF={}; ['guc','f','lv'].forEach(function(k){ self.kdSortF[k]=function(){ self.setState({kdSort:k, kdSortOpen:false}); if(self.kdEl) self.kdEl.scrollTop=0; }; });
     this.cr={}; this.tb={}; this.cam={x:460,y:0,z:1}; this.pre=null; this.busy=false; this.camEl=null; this.rootEl=null; this.drag=null; this.anim=null; this.k=1;
-    this.op={}; Object.keys(PH).forEach(function(k){ self.op[k]=function(){ self.openPh(k); }; }); this.op.kule=function(){ window.location.href='../medeniyet-kulesi/'; }; this.op.dukkan=function(){ window.location.href='../paket-acma/'; };
+    this.op={}; Object.keys(PH).forEach(function(k){ self.op[k]=function(){ self.openPh(k); }; }); this.op.kule=function(){ window.location.href='../medeniyet-kulesi/'; }; this.op.dukkan=function(){ window.location.href='../paket-acma/'; }; this.op.savas=function(){ window.location.href='../mod-haritasi/'; };
     this.ddGo={ kule:function(){ window.location.href='../medeniyet-kulesi/'; }, kusatma:function(){ window.location.href='../kusatma/'; },
       madalya:function(){ self.ddPazar('cephanelik'); }, arena:function(){ self.ddPazar('arena'); }, sezon:function(){ window.location.href='../sezon-bileti/'; } };
     this.tabGo={}; ['vitrin','cephanelik','arena','sezon'].forEach(function(k){ self.tabGo[k]=function(){ self.selTab(k); }; });
