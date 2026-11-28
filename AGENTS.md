@@ -27,3 +27,8 @@ Warsigil (mobil kart-strateji) arayüz taslakları. Her ekran `<ekran-adi>/index
 
 ## Bitiş
 En fazla 10 satır özet: değişen dosyalar, kontrol sonucu, "Görsel gerekli" listesi, belirsiz kalıp karar verilen yerler.
+
+## Dosya kodlaması (zorunlu)
+- Dosyalar her zaman BOM'suz UTF-8 yazılır. PowerShell'de Get-Content/Set-Content/Out-File/'>' kodlamasız KULLANILMAZ (Türkçe karakteri çift kodlayıp bozar); okuma ve yazma python (`open(..., encoding='utf-8', newline='')`) ya da node ile yapılır.
+- Her HTML'de `<meta charset="utf-8">` `<head>`'in ilk satırıdır.
+- Her görevin sonunda `node denetim-araci/karakter.mjs` çalıştırılır; çıktı `bozuk karakter: 0` değilse düzeltilmeden bitirilmez ve push yapılmaz.
